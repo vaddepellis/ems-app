@@ -2,11 +2,11 @@
 import axios from 'axios';
 import { BASE_URL } from '@env';
 const api = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL, // Replace with your base URL
+  baseURL: BASE_URL, // Replace with your base URL
   timeout: 10000, // Optional: 10 seconds timeout
   headers: {
     'Content-Type': 'application/json',
-    Accept: 'application/json',
+    'Accept': 'application/json',
   },
 });
 
